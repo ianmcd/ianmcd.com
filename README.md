@@ -3,8 +3,8 @@ This is the full source code for [ianmcd.com](http://ianmcd.com) (in development
 
 ###dev environment
 I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks and to view & test things on a local server with livereload.  I use the following [packages](https://github.com/ianmcd/ianmcd.com/blob/master/package.json):
-* [load-grunt-tasks](https://github.com/sindresorhus/load-grunt-tasks)
-* [time-grunt](https://github.com/sindresorhus/time-grunt)
+* [load-grunt-tasks](https://github.com/sindresorhus/load-grunt-tasks) &ndash; auto load grunt tasks
+* [time-grunt](https://github.com/sindresorhus/time-grunt) &ndash; display execution time of grunt tasks
 * [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
 * [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)
 * [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
