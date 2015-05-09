@@ -5,17 +5,16 @@ This is the full source code for [ianmcd.com](http://ianmcd.com) (in development
 I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks and to view & test things on a local server with livereload.  I use the following [packages](https://github.com/ianmcd/ianmcd.com/blob/master/package.json):
 * [load-grunt-tasks](https://github.com/sindresorhus/load-grunt-tasks) &ndash; auto load grunt tasks
 * [time-grunt](https://github.com/sindresorhus/time-grunt) &ndash; display execution time of grunt tasks
-* [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
-* [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect)
-* [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
-* [jshint-stylish](https://github.com/sindresorhus/jshint-stylish)
-* [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
-* [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat)
-* [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass)
-* [grunt-scss-lint](https://github.com/ahmednuaman/grunt-scss-lint)
-* [autoprefixer](https://github.com/postcss/autoprefixer)
-* [autoprefixer-core](https://github.com/postcss/autoprefixer-core)
-* [grunt-postcss](https://github.com/nDmitry/grunt-postcss)
-* [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin)
-* [grunt-newer](https://github.com/tschaub/grunt-newer)
-* [grunt-tinypng](https://github.com/marrone/grunt-tinypng)
+* [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch) &ndash; watches for file changes and runs appropriate tasks
+* [grunt-contrib-connect](https://github.com/gruntjs/grunt-contrib-connect) &ndash; local web server
+* [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint) &ndash; js linter
+* [jshint-stylish](https://github.com/sindresorhus/jshint-stylish) &ndash; pretty reporting for jshint
+* [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) &ndash; minify js files
+* [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat) &ndash; concatenates js files
+* [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass) &ndash; sass css preprocessor
+* [grunt-scss-lint](https://github.com/ahmednuaman/grunt-scss-lint) &ndash; scss linter
+* [autoprefixer](https://github.com/postcss/autoprefixer) &ndash; css autoprefixer
+* [autoprefixer-core](https://github.com/postcss/autoprefixer-core) &ndash; autoprefixer core
+* [grunt-postcss](https://github.com/nDmitry/grunt-postcss) &ndash; runs autoprefixer after css file is processed
+* [grunt-tinypng](https://github.com/marrone/grunt-tinypng) &ndash; compression for jpg and png files using tinypng.com api
+* [grunt-newer](https://github.com/tschaub/grunt-newer) &ndash; used with tinypng to prevent processing the same file multiple times
