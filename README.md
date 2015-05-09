@@ -19,8 +19,11 @@ I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks
 * [autoprefixer](https://github.com/postcss/autoprefixer) &ndash; css autoprefixer
 * [autoprefixer-core](https://github.com/postcss/autoprefixer-core) &ndash; autoprefixer core
 * [grunt-postcss](https://github.com/nDmitry/grunt-postcss) &ndash; runs autoprefixer after css file is processed
+* [grunt-retinafy](https://github.com/JrSchild/grunt-retinafy) &ndash; generates retina and standard images from source images
 * [grunt-tinypng](https://github.com/marrone/grunt-tinypng) &ndash; compression for jpg and png files using tinypng.com api
 * [grunt-newer](https://github.com/tschaub/grunt-newer) &ndash; used with tinypng to prevent processing the same file multiple times
 
+
 ###js libraries
 * [jquery](https://jquery.com/) &ndash; version 2.1.4
+* [retina.js](http://imulus.github.io/retinajs/) &ndash; automatically serves retina images when appropriate

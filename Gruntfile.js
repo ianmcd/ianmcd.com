@@ -90,6 +90,22 @@ module.exports = function(grunt) {
 
   // IMAGES
 
+  //grunt-retinafy
+    retinafy: {
+      options: {
+        sizes: {
+          '50%': { suffix: '' },
+          '100%': { suffix: '@2x' }
+        }
+      },
+      files: [{
+        expand: true,
+        cwd: 'src/img/orig/',
+        src: '**/*.{png, jpg}',
+        dest: 'src/img/'
+      }]
+    },
+
   // grunt-tinypng
     tinypng: {
       options: {
@@ -139,14 +155,14 @@ module.exports = function(grunt) {
         tasks: ['scsslint', 'sass', 'postcss']
       },
       img: {
-        files: ['src/img/**/*.{png,jpg,gif}'],
-        tasks: ['newer:tinypng']                       // only run imagemin on new files
+        files: ['src/img/**/*.{png,jpg}'],
+        tasks: ['newer:retinafy', 'newer:tinypng']      // only run on new files
       },
       livereload: {
         options: {
           livereload: true
         },
-        files: ['http/**/*.{html,css,js,png,jpg,gif}']
+        files: ['http/**/*.{html,css,js,png,jpg}']
       }
     }
   });
@@ -161,6 +177,7 @@ module.exports = function(grunt) {
     'scsslint',
     'sass',
     'postcss',
+    'newer:retinafy',
     'newer:tinypng',
     'connect',
     'watch'
@@ -173,6 +190,7 @@ module.exports = function(grunt) {
     'scsslint',
     'sass',
     'postcss',
+    'retinafy',
     'tinypng'
   ]);
 };
