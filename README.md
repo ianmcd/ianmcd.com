@@ -1,5 +1,5 @@
 ##ianmcd.com
-This is the full source code for [ianmcd.com](http://ianmcd.com)(in development).
+This is the full source code for [ianmcd.com](http://ianmcd.com) (in development).
 
 ###dev environment
 I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks and to view & test things on a local server with livereload.  I use the following [packages](https://github.com/ianmcd/ianmcd.com/blob/master/package.json):
