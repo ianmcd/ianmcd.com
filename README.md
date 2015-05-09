@@ -2,7 +2,7 @@
 This is the full source code for [ianmcd.com](http://ianmcd.com) (in development).
 
 ###browser support
-I've opted to only support the last 2 versions of any browser.  Primary visitors and targetted audience will be designers, developers or those working within our industry, so browsers should be pretty up-to-date in most cases.  This will also allow me to work with newer technology that I wouldn't otherwise get to use on a day-to-day basis.
+I've opted to only support the last 2 versions of major browsers.  Primary visitors and targetted audience will be designers, developers or those working within our industry, so browsers should be pretty up-to-date in most cases.  This will also allow me to work with newer technology that I wouldn't otherwise get to use on a day-to-day basis.
 
 ###dev environment
 I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks and to view & test things on a local server with livereload.  I use the following [packages](https://github.com/ianmcd/ianmcd.com/blob/master/package.json):
