@@ -147,11 +147,15 @@ module.exports = function(grunt) {
   // grunt-contrib-connect
     connect: {
       options: {
-        base: 'http',
-        post: 4444,
+        port: 4444,
         hostname: 'localhost',
         open: true,
         livereload: 35729
+      },
+      dev: {
+        options: {
+          base: 'http'
+        }
       }
     },
 
