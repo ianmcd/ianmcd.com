@@ -90,20 +90,26 @@ module.exports = function(grunt) {
 
   // IMAGES
 
-  //grunt-retinafy
-    retinafy: {
-      options: {
-        sizes: {
-          '50%': { suffix: '' },
-          '100%': { suffix: '@2x' }
-        }
-      },
-      files: [{
-        expand: true,
-        cwd: 'src/img/orig/',
-        src: '**/*.{png, jpg}',
-        dest: 'src/img/'
-      }]
+  // grunt-responsive-images
+    responsive_images: {
+      allFiles: {
+        options: {
+          sizes: [{
+            name: 'min',
+            width: '50%'
+          },{
+            name: 'min',
+            width: '100%',
+            suffix: '@2x'
+          }]
+        },
+        files: [{
+          expand: true,
+          src: ['**.{jpg,png}'],
+          cwd: 'src/img/orig',
+          dest: 'src/img'
+        }]
+      }
     },
 
   // grunt-tinypng
@@ -117,14 +123,14 @@ module.exports = function(grunt) {
       png: {
         expand: true,
         cwd: 'src/img/',
-        src: '**/*.png',
+        src: '*.png',
         dest: 'http/img/',
         ext: '.png'
       },
       jpg: {
         expand: true,
         cwd: 'src/img/',
-        src: '**/*.jpg',
+        src: '*.jpg',
         dest: 'http/img/',
         ext: '.jpg'
       }
@@ -156,7 +162,7 @@ module.exports = function(grunt) {
       },
       img: {
         files: ['src/img/**/*.{png,jpg}'],
-        tasks: ['newer:retinafy', 'newer:tinypng']      // only run on new files
+        tasks: ['newer:tinypng']      // only run on new files
       },
       livereload: {
         options: {
@@ -177,7 +183,7 @@ module.exports = function(grunt) {
     'scsslint',
     'sass',
     'postcss',
-    'newer:retinafy',
+    'newer:responsive_images',
     'newer:tinypng',
     'connect',
     'watch'
@@ -190,7 +196,7 @@ module.exports = function(grunt) {
     'scsslint',
     'sass',
     'postcss',
-    'retinafy',
+    'responsive_images',
     'tinypng'
   ]);
 };
