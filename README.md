@@ -28,6 +28,7 @@ I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks
 * [jquery](https://jquery.com/) &ndash; version 2.1.4
 * [retina.js](http://imulus.github.io/retinajs/) &ndash; auto replaces images with @2x when appropriate.
 
+***
 
 ####updates
 #####5/11/2015
