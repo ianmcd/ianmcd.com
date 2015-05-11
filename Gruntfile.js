@@ -27,6 +27,9 @@ module.exports = function(grunt) {
 
   // grunt-contrib-concat
     concat: {
+      options: {
+        sourceMap: true
+      },
       files: {
         src: [
           'src/js/lib/jquery.min.js',
@@ -40,7 +43,9 @@ module.exports = function(grunt) {
   // grunt-contrib-uglify
     uglify: {
       options: {
-        sourceMap: true
+        sourceMap: true,
+        sourceMapIncludeSources: true,
+        sourceMapIn: 'http/js/booji.js.map'
       },
       files: {
         src: 'http/js/booji.js',
