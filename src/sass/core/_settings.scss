@@ -1,18 +1,19 @@
 //	GLOBAL SETTINGS & VARIABLES
 
 //	added resets
-* {
+*,
+*:after,
+*:before {
   @include box-sizing(border-box);        // more-info: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
   -webkit-font-smoothing: antialiased; 		// more info: http://maxvoltar.com/archive/-webkit-font-smoothing
 }
 
 
 //  colors
-$rose: #fe016b;
-$teal: #1693a5;
+$black: #000;
+$white: #fff;
+
+$g-three: #333;
 
 
 //  fonts
-$raleway: 'raleway', helvetica, arial, sans-serif;
-$freight: 'freight-display-pro', TimesNewRoman, 'Times New Roman', Times, serif;
-$playfair: 'Playfair Display', Baskerville, Georgia, serif; 

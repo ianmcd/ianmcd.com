@@ -64,7 +64,7 @@ module.exports = function(grunt) {
       },
       all: {
         files: {
-          'http/css/booji.css': 'src/sass/booji.scss'
+          'http/css/merle.css': 'src/sass/merle.scss'
         }
       }
     },
@@ -89,7 +89,7 @@ module.exports = function(grunt) {
         ],
         map: true
       },
-      all: { src: 'http/css/booji.css' }
+      all: { src: 'http/css/merle.css' }
     },
 
 

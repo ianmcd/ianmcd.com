@@ -4,6 +4,13 @@ This is the full source code for [ianmcd.com](http://ianmcd.com) (in development
 ###browser support
 I've opted to only support the last 2 versions of major browsers.  Primary visitors and targetted audience will be designers, developers or those working within our industry, so browsers should be pretty up-to-date in most cases.  This will also allow me to work with newer technology that I wouldn't otherwise get to use on a day-to-day basis.
 
+###fonts
+* [Kepler Std Display](https://typekit.com/fonts/kepler-std-display) & [Futura PT](https://typekit.com/fonts/futura-pt) served by [Typekit](https://typekit.com/)
+
+###js libraries
+* [jquery](https://jquery.com/) &ndash; version 2.1.4
+* [retina.js](http://imulus.github.io/retinajs/) &ndash; auto replaces images with @2x when appropriate.
+
 ###dev environment
 I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks and to view & test things on a local server with livereload.  I use the following [packages](https://github.com/ianmcd/ianmcd.com/blob/master/package.json):
 * [load-grunt-tasks](https://github.com/sindresorhus/load-grunt-tasks) &ndash; auto load grunt tasks
@@ -23,16 +30,15 @@ I use [grunt](https://github.com/gruntjs/grunt) to streamline a variety of tasks
 * [grunt-tinypng](https://github.com/marrone/grunt-tinypng) &ndash; compression for jpg and png files using tinypng.com api
 * [grunt-newer](https://github.com/tschaub/grunt-newer) &ndash; used with tinypng to prevent processing the same file multiple times
 
-
-###js libraries
-* [jquery](https://jquery.com/) &ndash; version 2.1.4
-* [retina.js](http://imulus.github.io/retinajs/) &ndash; auto replaces images with @2x when appropriate.
-
 ***
 
 ####updates
+#####9/27/2015
+* rebooting project, nothing exciting yet.
+
 #####5/11/2015
 * replaced grunt-retinafy with grunt-responsive-images &ndash; spent too much time trying to get retinafy to work.
+* general testing of dev area
 
 #####5/09/2015
 * dev environment setup.
