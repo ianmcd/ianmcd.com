@@ -20,6 +20,9 @@
     <script src="//use.typekit.net/naj7tgt.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+    <!-- inconsolata -->
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
     <!-- icon font -->
 
 
@@ -27,12 +30,32 @@
     <link rel="stylesheet" type="text/css" href="/css/merle.css" />
   </head>
   <body>
-    <button class="nav-menu-toggle" id="js-menu-toggle">
-      <p>Menu</p><span></span>
-    </button>
+    <div class="toggle-wrapper" id="js-toggle-wrapper">
+      <button class="nav-menu-toggle" id="js-menu-toggle">
+        <p>Menu</p><span></span>
+      </button>
+    </div>
     <div class="site-wrapper" id="js-site-wrapper">
       <nav class="sidebar-nav">
-        Menu
+        <ul class="list-no-format list-small-border">
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Lifestyle</a></li>
+        </ul>
+        <ul class="list-no-format list-small-border">
+          <li><a href="#">Notebook</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Quotes</a></li>
+        </ul>
+        <ul class="list-no-format list-small-border">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Dribbble</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
       </nav>
 
       <div class="push-wrapper">

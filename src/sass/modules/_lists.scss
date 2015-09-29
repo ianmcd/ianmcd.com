@@ -1,0 +1,19 @@
+.list-no-format {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-small-border {
+  padding-top: 15px;
+  position: relative;
+
+  &:before {
+    background: $black;
+    content: '';
+    height: 1px;
+    position: absolute;
+    top: 0;
+    width: 30px;
+  }
+}
