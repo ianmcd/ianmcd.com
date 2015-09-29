@@ -1,4 +1,7 @@
 //	BASE-LEVEL TAGS
-body { background: $g-three; }
+body { background: $darkest; }
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+  transition: color .3s;
+}
