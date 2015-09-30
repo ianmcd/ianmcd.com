@@ -1,0 +1,20 @@
+.home-top-post {
+  background: $white;
+  display: block;
+  margin: -100px auto 0;
+  max-width: 900px;
+  padding: 40px 50px 42px;
+  position: relative;
+  width: 100%;
+
+  &:after {
+    background: $light;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100px;
+  }
+}

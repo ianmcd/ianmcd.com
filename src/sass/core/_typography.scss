@@ -1,1 +1,16 @@
 //	BASE-LEVEL TYPOGRAPHY
+.center { text-align: center; }
+
+.post-title {
+  color: $dark;
+  font: 600 58px $kepler;
+  letter-spacing: -.04em;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  color: $dark;
+  font: 20px/30px $kepler;
+}

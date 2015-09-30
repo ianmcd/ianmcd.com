@@ -2,6 +2,11 @@
 body { background: $darkest; }
 
 a {
+  color: $color;
   text-decoration: none;
   transition: color .3s;
+
+  &:hover {
+    color: $opp-color;
+  }
 }

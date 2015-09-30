@@ -1,7 +1,8 @@
 //	BASE-LEVEL LAYOUT (MARGIN, PADDING, SIZING)
 .content-wrapper {
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1400px;
+  padding: 0;
   width: 100%;
 }
 
@@ -9,3 +10,5 @@
   height: 70px;
   padding: 25px 0;
 }
+
+.page-inner { padding-top: 70px; }

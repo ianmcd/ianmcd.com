@@ -17,3 +17,35 @@
     width: 30px;
   }
 }
+
+.list-home-post-meta {
+  list-style: none;
+  margin: 33px 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    color: $mid;
+    display: inline-block;
+    font: 13px $futura;
+    padding: 0 13px;
+    position: relative;
+
+    &:first-child:before {
+      background: $mid;
+      border-radius: 50%;
+      content: '';
+      height: 5px;
+      position: absolute;
+      right: -3px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5px;
+    }
+  }
+
+  a {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
