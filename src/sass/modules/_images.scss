@@ -1,5 +1,6 @@
 figure {
   background: $light;
+  overflow: hidden;
 
   &.home-banner {
     height: 500px;
