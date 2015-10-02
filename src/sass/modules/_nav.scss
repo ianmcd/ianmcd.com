@@ -1,51 +1,4 @@
-// main nav
-html,
-body,
-.site-wrapper,
-.push-wrapper,
-.page-wrapper {
-  height: 100%;
-}
-
-.page-wrapper {
-  background: $white;
-  overflow: auto;
-}
-
-.page-wrapper,
-.page-inner {
-  position: relative;
-}
-
-.site-wrapper {
-  overflow: hidden;
-  perspective: 1500px;
-  position: relative;
-}
-
-.push-wrapper {
-  height: 100%;
-  left: 0;
-  overflow: hidden;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform .5s;
-  z-index: 99;
-
-  &:after {
-    background: rgba($black, .2);
-    content: '';
-    height: 0;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: opacity .5s, width .1s .5s, height .1s .5s;
-    width: 0;
-  }
-}
-
-.sidebar-nav {
+.nav-sidebar {
   background: $white;
   height: 100%;
   opacity: 1;
@@ -77,37 +30,24 @@ body,
   }
 }
 
-.js-menu-open {
-  .logo {
-    color: $light;
-    margin-left: 25px;
-  }
-
-  .push-wrapper {
-    transform: translate3d(0, 0, -290px);
-  }
-
-  .sidebar-nav {
-    transform: translate3d(0, 0, 0);
-    transition: transform .5s;
-
-    :after {
-      height: 0;
-      opacity: 0;
-      transition: opacity .5s, width .1s .5s, height .1s .5s;
-      width: 0;
-    }
-  }
-
-  .push-wrapper:after {
-    height: 100%;
-    opacity: 1;
-    transition: opacity .5s;
-    width: 100%;
-  }
+.nav-toggle-wrapper {
+  height: 70px;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 25px 0;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
 }
 
-.sidebar-nav-top {
+.nav-toggle-wrapper__logo {
+  color: $dark;
+  i { font-size: 20px; }
+
+  &:hover { color: $color; }
+}
+
+.nav-toggle-wrapper__top {
   height: 70px;
   padding: 25px 0;
   position: absolute;
@@ -116,25 +56,7 @@ body,
   width: 290px;
 }
 
-.toggle-wrapper {
-  height: 70px;
-  margin: 0 auto;
-  max-width: 1100px;
-  padding: 25px 0;
-  position: relative;
-  width: 100%;
-  z-index: 1000;
-
-  &.js-menu-open {
-    left: 50%;
-    //max-width: 100%;
-    position: absolute;
-    transform: translateX(-50%);
-    transition: none;
-  }
-}
-
-.nav-menu-toggle {
+.nav-toggle-wrapper__menu {
   background: transparent;
   border: 0;
   font: 600 13px $futura;
@@ -181,29 +103,4 @@ body,
 
     &:before { bottom: 5px; }
   }
-
-  &.js-menu-open {
-    right: 25px;
-
-    span {
-      width: 0;
-
-      &:after {
-        top: 0;
-        transform: rotate(-45deg);
-      }
-
-      &:before {
-        bottom: 0;
-        transform: rotate(45deg);
-      }
-    }
-  }
-}
-
-.logo {
-  color: $dark;
-  i { font-size: 20px; }
-
-  &:hover { color: $color; }
 }

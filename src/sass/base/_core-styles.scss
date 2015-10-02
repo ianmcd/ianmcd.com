@@ -10,3 +10,13 @@ a {
     color: $opp-color;
   }
 }
+
+p {
+  color: $dark;
+  font: 20px/30px $kepler;
+}
+
+figure {
+  background: $light;
+  overflow: hidden;
+}

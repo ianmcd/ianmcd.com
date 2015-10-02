@@ -2,18 +2,24 @@
 
 
 // core/base level stuff
-@import     'core/normalize';
-@import     'core/settings';
-@import     'core/helpers';
-@import     'core/base';
-@import     'core/typography';
-@import     'core/layout';
+@import     'base/normalize';
+@import     'base/settings';
+@import     'base/helpers';
+@import     'base/core-styles';
+
+// layout
+@import     'layout/general';
+@import     'layout/layers';
 
 // modules
 @import    'modules/nav';
+@import    'modules/links';
 @import    'modules/lists';
 @import    'modules/images';
-@import    'modules/layers';
+@import    'modules/typography';
+
+//states
+@import    'states/nav';
 
 //themes
 @import    'theme/home';
