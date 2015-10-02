@@ -1,0 +1,22 @@
+.button-wrapper {
+  margin-bottom: 50px;
+  margin-top: 44px;
+
+}
+
+.button {
+  background: $color;
+  color: $white;
+  display: inline-block;
+  font: 600 13px $futura;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  transition: all .3s;
+
+  &:hover {
+    background: darken($color, 7%);
+    color: $white;
+  }
+}

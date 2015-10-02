@@ -1,0 +1,53 @@
+// general post styles
+.post__title {
+  color: $dark;
+  font: 600 58px $kepler;
+  letter-spacing: -.025em;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+}
+
+
+// home page intro post
+.intro-post {
+  background: $white;
+  display: block;
+  margin: -100px auto 46px;
+  max-width: 900px;
+  padding: 40px 50px 42px;
+  position: relative;
+  width: 100%;
+
+  &:after {
+    background: $light;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100px;
+  }
+}
+
+.intro-post__meta {
+  margin: 33px 0;
+  text-align: center;
+}
+
+
+// home sub-post
+.sub-post__meta {
+  margin: 14px 0 17px;
+}
+
+.sub-post__title {
+  font: 600 32px/1em $kepler;
+  letter-spacing: -.025em;
+}
+
+.sub-post__description {
+  font-size: 18px;
+  line-height: 1.3em;
+}

@@ -11,6 +11,7 @@
 // layout
 @import     'layout/general';
 @import     'layout/layers';
+@import     'layout/grid';
 
 // modules
 @import    'modules/nav';
@@ -18,9 +19,10 @@
 @import    'modules/lists';
 @import    'modules/images';
 @import    'modules/typography';
+@import    'modules/posts';
+@import    'modules/buttons';
 
 //states
 @import    'states/nav';
 
 //themes
-@import    'theme/home';

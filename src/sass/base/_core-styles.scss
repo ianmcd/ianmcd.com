@@ -13,10 +13,20 @@ a {
 
 p {
   color: $dark;
-  font: 20px/30px $kepler;
+  font: 20px/1.5em $kepler;
+  margin: 0 0 1.25em;
+
+  &:last-child { margin: 0; }
 }
 
 figure {
   background: $light;
   overflow: hidden;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { margin: 0; }
