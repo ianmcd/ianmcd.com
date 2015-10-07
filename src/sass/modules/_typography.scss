@@ -1,2 +1,22 @@
 //	BASE-LEVEL TYPOGRAPHY
 .center { text-align: center; }
+
+.home-section-title { margin-bottom: 44px; }
+
+h1,
+.heading-one {
+  font: 600 58px/1em $kepler;
+  letter-spacing: -.025em;
+}
+
+h2,
+.heading-two {
+  font: 600 32px/1em $kepler;
+  letter-spacing: -.025em;
+}
+
+h3,
+.heading-three {
+  font: 600 24px/1em $kepler;
+  letter-spacing: -.025em;
+}

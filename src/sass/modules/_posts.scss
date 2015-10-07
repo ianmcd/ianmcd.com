@@ -1,10 +1,5 @@
 // general post styles
 .post__title {
-  color: $dark;
-  font: 600 58px $kepler;
-  letter-spacing: -.025em;
-  line-height: 1;
-  margin: 0;
   text-align: center;
 }
 
@@ -40,11 +35,6 @@
 // home sub-post
 .sub-post__meta {
   margin: 14px 0 17px;
-}
-
-.sub-post__title {
-  font: 600 32px/1em $kepler;
-  letter-spacing: -.025em;
 }
 
 .sub-post__description {

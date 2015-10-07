@@ -19,4 +19,8 @@
     background: darken($color, 7%);
     color: $white;
   }
+
+  &:active {
+    transform: translateY(3px);
+  }
 }

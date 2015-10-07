@@ -11,6 +11,9 @@
   }
 
   .grid__omega { margin-right: 0; }
+
+  .grid__no-bottom,
+  &.grid__no-bottom { margin-bottom: 0; }
 }
 
 .grid__one-third { width: 30%; }
