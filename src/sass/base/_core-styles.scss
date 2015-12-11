@@ -1,0 +1,13 @@
+body {
+  background: $primary-body;
+  height: 100%;
+}
+
+html { height: 100%; }
+
+.content__wrapper {
+  background: $white;
+  height: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
