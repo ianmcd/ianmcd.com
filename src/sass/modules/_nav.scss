@@ -3,7 +3,9 @@
   cursor: pointer;
   display: block;
   height: 15px;
+  opacity: 1;
   position: relative;
+  transition: opacity .3s;
   width: 17px;
 
   &:before {
@@ -31,4 +33,12 @@
   float: left;
   height: 100%;
   padding: 20px;
+  transition: width .3s;
+  width: 57px;
+
+  &:hover {
+    width: 250px;
+
+    .nav__control { opacity: 0; }
+  }
 }
