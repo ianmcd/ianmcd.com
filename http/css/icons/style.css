@@ -1,16 +1,17 @@
 @font-face {
-	font-family: 'ianmcd-font';
-	src:url('fonts/ianmcd-font.eot?4v2s2u');
-	src:url('fonts/ianmcd-font.eot?#iefix4v2s2u') format('embedded-opentype'),
-		url('fonts/ianmcd-font.ttf?4v2s2u') format('truetype'),
-		url('fonts/ianmcd-font.woff?4v2s2u') format('woff'),
-		url('fonts/ianmcd-font.svg?4v2s2u#ianmcd-font') format('svg');
+	font-family: 'ianmcd';
+	src:url('fonts/ianmcd.eot?e7rcre');
+	src:url('fonts/ianmcd.eot?e7rcre#iefix') format('embedded-opentype'),
+		url('fonts/ianmcd.ttf?e7rcre') format('truetype'),
+		url('fonts/ianmcd.woff?e7rcre') format('woff'),
+		url('fonts/ianmcd.svg?e7rcre#ianmcd') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-[class^="im-"], [class*=" im-"] {
-	font-family: 'ianmcd-font';
+[class^="imcd-"], [class*=" imcd-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'ianmcd' !important;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -23,6 +24,190 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.im-logo:before {
-	content: "\e600";
+.imcd-out:before {
+	content: "\e900";
 }
+.imcd-hyperlink:before {
+	content: "\e901";
+}
+.imcd-box:before {
+	content: "\e902";
+}
+.imcd-write:before {
+	content: "\e903";
+}
+.imcd-clock:before {
+	content: "\e904";
+}
+.imcd-reply:before {
+	content: "\e905";
+}
+.imcd-reply-all:before {
+	content: "\e906";
+}
+.imcd-forward:before {
+	content: "\e907";
+}
+.imcd-flag:before {
+	content: "\e908";
+}
+.imcd-search:before {
+	content: "\e909";
+}
+.imcd-trash:before {
+	content: "\e90a";
+}
+.imcd-envelope:before {
+	content: "\e90b";
+}
+.imcd-bubble:before {
+	content: "\e90c";
+}
+.imcd-bubbles:before {
+	content: "\e90d";
+}
+.imcd-user:before {
+	content: "\e90e";
+}
+.imcd-users:before {
+	content: "\e90f";
+}
+.imcd-cloud:before {
+	content: "\e910";
+}
+.imcd-download:before {
+	content: "\e911";
+}
+.imcd-upload:before {
+	content: "\e912";
+}
+.imcd-rain:before {
+	content: "\e913";
+}
+.imcd-sun:before {
+	content: "\e914";
+}
+.imcd-moon:before {
+	content: "\e915";
+}
+.imcd-bell:before {
+	content: "\e916";
+}
+.imcd-folder:before {
+	content: "\e917";
+}
+.imcd-pin:before {
+	content: "\e918";
+}
+.imcd-sound:before {
+	content: "\e919";
+}
+.imcd-microphone:before {
+	content: "\e91a";
+}
+.imcd-camera:before {
+	content: "\e91b";
+}
+.imcd-image:before {
+	content: "\e91c";
+}
+.imcd-cog:before {
+	content: "\e91d";
+}
+.imcd-calendar:before {
+	content: "\e91e";
+}
+.imcd-book:before {
+	content: "\e91f";
+}
+.imcd-map-marker:before {
+	content: "\e920";
+}
+.imcd-store:before {
+	content: "\e921";
+}
+.imcd-support:before {
+	content: "\e922";
+}
+.imcd-tag:before {
+	content: "\e923";
+}
+.imcd-heart:before {
+	content: "\e924";
+}
+.imcd-video-camera:before {
+	content: "\e925";
+}
+.imcd-trophy:before {
+	content: "\e926";
+}
+.imcd-cart:before {
+	content: "\e927";
+}
+.imcd-eye:before {
+	content: "\e928";
+}
+.imcd-cancel:before {
+	content: "\e929";
+}
+.imcd-chart:before {
+	content: "\e92a";
+}
+.imcd-target:before {
+	content: "\e92b";
+}
+.imcd-printer:before {
+	content: "\e92c";
+}
+.imcd-location:before {
+	content: "\e92d";
+}
+.imcd-bookmark:before {
+	content: "\e92e";
+}
+.imcd-monitor:before {
+	content: "\e92f";
+}
+.imcd-cross:before {
+	content: "\e930";
+}
+.imcd-plus:before {
+	content: "\e931";
+}
+.imcd-left:before {
+	content: "\e932";
+}
+.imcd-up:before {
+	content: "\e933";
+}
+.imcd-browser:before {
+	content: "\e934";
+}
+.imcd-windows:before {
+	content: "\e935";
+}
+.imcd-switch:before {
+	content: "\e936";
+}
+.imcd-dashboard:before {
+	content: "\e937";
+}
+.imcd-play:before {
+	content: "\e938";
+}
+.imcd-fast-forward:before {
+	content: "\e939";
+}
+.imcd-next:before {
+	content: "\e93a";
+}
+.imcd-refresh:before {
+	content: "\e93b";
+}
+.imcd-film:before {
+	content: "\e93c";
+}
+.imcd-home:before {
+	content: "\e93d";
+}
+
