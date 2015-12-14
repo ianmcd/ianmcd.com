@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'ianmcd';
-	src:url('fonts/ianmcd.eot?e7rcre');
-	src:url('fonts/ianmcd.eot?e7rcre#iefix') format('embedded-opentype'),
-		url('fonts/ianmcd.ttf?e7rcre') format('truetype'),
-		url('fonts/ianmcd.woff?e7rcre') format('woff'),
-		url('fonts/ianmcd.svg?e7rcre#ianmcd') format('svg');
+	src:url('fonts/ianmcd.eot?qzk99h');
+	src:url('fonts/ianmcd.eot?qzk99h#iefix') format('embedded-opentype'),
+		url('fonts/ianmcd.ttf?qzk99h') format('truetype'),
+		url('fonts/ianmcd.woff?qzk99h') format('woff'),
+		url('fonts/ianmcd.svg?qzk99h#ianmcd') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -24,6 +24,15 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.imcd-github:before {
+	content: "\e93e";
+}
+.imcd-instagram:before {
+	content: "\e93f";
+}
+.imcd-untappd:before {
+	content: "\e940";
+}
 .imcd-out:before {
 	content: "\e900";
 }

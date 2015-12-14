@@ -7,8 +7,16 @@
 
 h1,
 .heading-1 {
+  color: $primary-text;
   font: 700 36px/1em $futura;
   text-transform: uppercase;
+}
+
+h2,
+.heading-2 {
+  color: $primary-text;
+  font: 700 28px/34px $futura;
+  margin: 0 0 6px;
 }
 
 .sub-heading-1 {
@@ -21,4 +29,10 @@ h1,
   display: block;
   font: 700 11px $futura;
   text-transform: uppercase;
+}
+
+p {
+  color: $primary-text;
+  font: 400 18px/25px $kepler;
+  margin-top: 0;
 }

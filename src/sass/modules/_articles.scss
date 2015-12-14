@@ -1,0 +1,10 @@
+.article__list {
+  .article__list-title { color: $primary-text; }
+
+  article {
+    margin-bottom: 65px;
+    position: relative;
+
+    &:last-child { margin-bottom: 0; }
+  }
+}
