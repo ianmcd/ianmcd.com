@@ -8,6 +8,12 @@ html { height: 100%; }
 .content__wrapper {
   background: $white;
   height: 100%;
+  left: 57px;
   overflow: hidden;
-  padding: 20px;
+  position: absolute;
+  right: 0;
+  transition: transform .3s;
+  z-index: 100;
+
+  &.js-push { transform: translateX(193px); }
 }

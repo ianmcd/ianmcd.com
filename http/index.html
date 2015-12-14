@@ -33,11 +33,11 @@
     <link rel="stylesheet" type="text/css" href="/css/merle.css" />
   </head>
   <body>
-    <div class="nav__wrapper">
+    <div class="nav__wrapper" id="js-nav">
       <span class="nav__control"></span>
       <nav class="nav__container">
-        <a class="nav__button right">Pin</a>
-        <ul class="nav__list list-no-format">
+        <button class="nav__button right">Pin</button>
+        <ul class="list-no-format nav__list">
           <li class="nav__list-blog"><a href="#">Blog</a>
             <ul class="list-no-format">
               <li><a href="#">Featured Articles</a></li>
@@ -53,11 +53,26 @@
           </li>
           <li class="nav__list-about"><a href="#">About</a></li>
         </ul>
-        <a class="nav__button center">Source on Github</a>
+        <a class="nav__button bottom">Source on Github</a>
       </nav>
     </div>
-    <div class="content__wrapper">
+    <div class="content__wrapper" id="js-content">
+      <section class="grid__half home__hero">
+        <div class="home__hero__content">
+          <ul class="social-icons">
+            <li>instagram</li>
+            <li>github</li>
+            <li>untappd</li>
+          </ul>
+          <h1 class="text-center text-white">Ian McDowell<span class="sub-heading-1 text-muted-light">Visual Design & Front End Development</span></h1>
+          <p class="small-caps-bold text-muted-light text-center">Milwaukee, WI</p>
+        </div>
+        <img src="/img/milwaukee-in-winter-min.png" alt="Milwaukee Winter">
+      </section>
+      <section class="grid__half home__scroller">
 
+      </section>
+      </div>
     </div>
 
     <!-- compiled js -->
