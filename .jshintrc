@@ -19,6 +19,8 @@
   "jquery": true,
 
   "globals": {
-    "console": true
+    "console": true,
+    "Cookies": true,
+    "WOW": true
   }
 }

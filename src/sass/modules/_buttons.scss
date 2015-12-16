@@ -1,4 +1,67 @@
-button {
+button { outline: 0; }
 
-  outline: 0;
+.sm__button {
+  background: transparent;
+  border: 1px solid $muted-border;
+  border-radius: 12px;
+  color: $muted-text;
+  cursor: pointer;
+  display: inline-block;
+  font: 300 11px $futura;
+  height: 24px;
+  letter-spacing: 2px;
+  line-height: 23px;
+  overflow: hidden;
+  padding: 0 11px 0 13px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .3s;
+  z-index: 10;
+
+  &.right {
+    @include pie-clearfix;
+    float: right;
+  }
+
+  &.bottom {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+
+  &:after {
+    background: $primary-body;
+    content: '';
+    height: 120%;
+    left: -140%;
+    position: absolute;
+    top: -10%;
+    transform: skewX(15deg);
+    transition: all .3s;
+    width: 120%;
+  }
+
+  &:hover,
+  &.active {
+    color: $white;
+
+    &:after {
+      background: $muted-border;
+      left: -10%;
+      z-index: -1;
+    }
+  }
+}
+
+.sm__button--muted {
+  border-color: $muted-text-light;
+  color: $muted-text-light;
+
+  &:after { background: transparent; }
+
+  &:hover:after { background: $muted-text-light; }
 }

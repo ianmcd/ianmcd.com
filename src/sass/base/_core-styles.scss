@@ -6,8 +6,8 @@ body {
 html { height: 100%; }
 
 .content__wrapper {
-  background: $white;
-  height: 100%;
+  background: $primary-body;
+  height: auto;
   left: 57px;
   overflow: hidden;
   position: absolute;
@@ -16,4 +16,14 @@ html { height: 100%; }
   z-index: 100;
 
   &.js-push { transform: translateX(193px); }
+
+  &.js-content-pin {
+    left: 250px;
+    transform: translateX(0);
+    transition: none;
+  }
 }
+
+.content__wrapper--white { background: $white; }
+
+.content__wrapper--fixed { height: 100%; }

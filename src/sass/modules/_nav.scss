@@ -5,6 +5,7 @@
   height: 15px;
   opacity: 1;
   position: absolute;
+  top: 34px;
   transition: opacity .3s;
   width: 17px;
 
@@ -34,13 +35,14 @@
   float: left;
   height: 100%;
   overflow: hidden;
-  padding: 20px;
-  position: relative;
+  padding: 30px 20px 20px;
+  position: fixed;
   transition: width .3s;
   width: 57px;
   z-index: 1;
 
-  &.js-max {
+  &.js-max,
+  &.js-nav-pin {
     cursor: auto;
     width: 250px;
 
@@ -49,6 +51,13 @@
     .nav__container {
       opacity: 1;
     }
+  }
+
+  &.js-nav-pin {
+    transition: none;
+
+    .nav__control { transition: none;  }
+    .nav__container { transition: none;  }
   }
 }
 
@@ -59,62 +68,6 @@
   text-align: center;
   transition: opacity .3s;
   width: 210px;
-}
-
-.nav__button {
-  background: transparent;
-  border: 1px solid $muted-border;
-  border-radius: 12px;
-  color: $muted-text;
-  cursor: pointer;
-  display: inline-block;
-  font: 300 11px $futura;
-  height: 24px;
-  letter-spacing: 2px;
-  line-height: 23px;
-  overflow: hidden;
-  padding: 0 11px 0 13px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: color .3s;
-  z-index: 10;
-
-  &.right {
-    @include pie-clearfix;
-    float: right;
-  }
-
-  &.bottom {
-    bottom: 0;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    white-space: nowrap;
-  }
-
-  &:after {
-    background: $primary-body;
-    content: '';
-    height: 120%;
-    left: -140%;
-    position: absolute;
-    top: -10%;
-    transform: skewX(15deg);
-    transition: all .3s;
-    width: 120%;
-  }
-
-  &:hover {
-    color: $white;
-
-    &:after {
-      background: $muted-border;
-      left: -10%;
-      z-index: -1;
-    }
-  }
 }
 
 .nav__list {
@@ -162,6 +115,10 @@
 .nav__list-notebook > a:before { content: '\e91f'; }
 .nav__list-about > a:before { content: '\e90e'; }
 
+.nav__breadcrumbs {
+  margin: 0 0 60px;
+  text-align: center;
+}
 
 @media (max-height: 520px) {
   .nav__button.bottom {

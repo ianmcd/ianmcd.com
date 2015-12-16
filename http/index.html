@@ -28,6 +28,7 @@
 
     <!-- highlight.js theme -->
     <link rel="stylesheet" type="text/css" href="/css/github.css" />
+    <link rel="stylesheet" type="text/css" href="/css/animate.css" />
 
     <!-- compiled sass -->
     <link rel="stylesheet" type="text/css" href="/css/merle.css" />
@@ -36,7 +37,7 @@
     <div class="nav__wrapper" id="js-nav">
       <span class="nav__control"></span>
       <nav class="nav__container">
-        <button class="nav__button right">Pin</button>
+        <button class="sm__button right" id="js-nav-pin">Pin</button>
         <ul class="list-no-format nav__list">
           <li class="nav__list-blog"><a href="#">Blog</a>
             <ul class="list-no-format">
@@ -53,19 +54,19 @@
           </li>
           <li class="nav__list-about"><a href="#">About</a></li>
         </ul>
-        <a href="https://github.com/ianmcd/ianmcd.com" target="_blank" class="nav__button bottom">Source on Github</a>
+        <a href="https://github.com/ianmcd/ianmcd.com" target="_blank" class="sm__button bottom">Source on Github</a>
       </nav>
     </div>
-    <div class="content__wrapper" id="js-content">
+    <div class="content__wrapper content__wrapper--white content__wrapper--fixed" id="js-content">
       <section class="grid__half home__hero">
         <div class="home__hero__content text-center">
-          <ul class="list-no-format list__social-icons">
+          <ul class="list-no-format list__social-icons wow fadeInDown">
             <li class="instagram"><a href="https://www.instagram.com/ianmcdwi/" target="_blank" title="instagram"><i class="imcd-instagram"></i></a></li>
             <li class="github"><a href="https://github.com/ianmcd" target="_blank" title="github"><i class="imcd-github"></i></a></li>
             <li class="untappd"><a href="https://untappd.com/user/ianmcd" target="_blank" title="untappd"><i class="imcd-untappd"></i></a></li>
           </ul>
-          <h1 class="text-white">Ian McDowell<span class="sub-heading-1 text-muted-light">Visual Design & Front End Development</span></h1>
-          <p class="small-caps-bold text-muted-light">Milwaukee, WI</p>
+          <h1 class="text-white text-caps text-single-line wow fadeInUp">Ian McDowell<span class="sub-heading-1 text-muted-light">Visual Design & Front End Development</span></h1>
+          <p class="small-caps-bold text-muted-light wow fadeIn">Milwaukee, WI</p>
         </div>
         <img src="/img/milwaukee-in-winter-min.png" alt="Milwaukee Winter">
       </section>
@@ -107,7 +108,6 @@
           </ul>
         </article>
       </section>
-      </div>
     </div>
 
     <!-- compiled js -->

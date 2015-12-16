@@ -5,11 +5,15 @@
 
 .text-muted-light { color: $muted-text-light; }
 
+.text-caps { text-transform: uppercase; }
+
+.text-single-line { line-height: 1em; }
+
 h1,
 .heading-1 {
   color: $primary-text;
-  font: 700 36px/1em $futura;
-  text-transform: uppercase;
+  font: 700 36px/45px $futura;
+  margin: 0 0 12px;
 }
 
 h2,
@@ -17,6 +21,30 @@ h2,
   color: $primary-text;
   font: 700 28px/34px $futura;
   margin: 0 0 6px;
+}
+
+h4,
+.heading-4 {
+  color: $muted-text;
+  font: 700 15px $futura;
+  margin: 0 0 45px;
+
+  i {
+    background: $primary-body;
+    border: 2px solid $muted-border;
+    border-radius: 17px;
+    display: block;
+    height: 34px;
+    left: 0;
+    line-height: 34px;
+    margin-top: -8px;
+    position: absolute;
+    text-align: center;
+    width: 34px;
+    z-index: 200;
+
+    &:before { line-height: 32px; }
+  }
 }
 
 .sub-heading-1 {
