@@ -5,3 +5,21 @@
   @include box-sizing(border-box);        // more-info: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
   -webkit-font-smoothing: antialiased; 		// more info: http://maxvoltar.com/archive/-webkit-font-smoothing
 }
+
+
+// color variables
+$tulip:       #efac41;
+$brandy:      #de8531;
+$tuscany:     #c96532;
+
+$gr-darkest:  #323a45;
+$gr-dark:     #556270;
+$gr-mid:      #7e8c98;
+$gr-light:    #eceef3;
+$gr-lightest: #f9f9f9;
+
+
+// font variables
+$font-brandon:  "brandon-grotesque", sans-serif;
+$font-gibson:   "canada-type-gibson", sans-serif;
+$font-archer:   "apb", serif;
