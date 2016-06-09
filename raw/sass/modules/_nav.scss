@@ -1,0 +1,13 @@
+.inline-nav {
+  font: 500 13px/1.5em $font-brandon;
+  margin-top: 40px;
+  text-transform: uppercase;
+
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    display: inline-block;
+  }
+}

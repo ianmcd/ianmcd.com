@@ -1,0 +1,24 @@
+
+
+h1,
+.heading-1 {
+  color: $gr-darkest;
+  font: 700 54px/1.25em $font-brandon;
+  text-transform: uppercase;
+
+  span {
+    color: $gr-dark;
+    display: block;
+    font: 500 14px/1.5em $font-archer;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    margin-top: -2px;
+  }
+}
+
+h4,
+.heading-4 {
+  color: $gr-mid;
+  font: 500 12px/1.5em $font-brandon;
+  text-transform: uppercase;
+}

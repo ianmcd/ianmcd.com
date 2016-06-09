@@ -6,4 +6,26 @@ body {
   border: 10px solid $gr-darkest;
   min-height: 100%;
   padding: 50px;
+
+  &.body__home {
+    font-size: 0;
+    height: 100%;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+
+.no-margin { margin: 0; }
+
+a {
+  color: $brandy;
+  text-decoration: none;
+  transition: color .3s;
+
+  &:hover { color: $tulip; }
 }
