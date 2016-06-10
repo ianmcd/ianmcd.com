@@ -1,3 +1,8 @@
+.header-nav {
+  font-size: 16px; // resetting from vertical align stuff.
+  position: absolute;
+}
+
 .inline-nav {
   font: 500 13px/1.5em $font-brandon;
   margin-top: 40px;
@@ -9,5 +14,27 @@
 
   li {
     display: inline-block;
+    margin: 0 6px;
+    padding: 0 5px;
+    position: relative;
+
+    &:after {
+      background: $gr-darkest;
+      content: '';
+      display: block;
+      height: 5px;
+      position: absolute;
+      right: -10px;
+      top: 9px;
+      transform: rotate(45deg);
+      width: 5px;
+    }
+
+    &:last-child:after { content: none; }
+  }
+
+  a {
+    display: block;
+    padding: 2px;
   }
 }

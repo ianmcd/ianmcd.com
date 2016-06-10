@@ -1,0 +1,36 @@
+.anim__body-home {
+  animation-delay: .8s;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  animation-name: home-body;
+  animation-timing-function: ease-in-out;
+  border-width: 0;
+}
+
+.anim__home-intro {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: home-intro;
+  animation-timing-function: ease-out;
+  opacity: 0;
+  transform: scale(.5);
+}
+
+// keyframes
+
+@keyframes home-body {
+  0% { border-width: 0; }
+  100% { border-width: 12px; }
+}
+
+@keyframes home-intro {
+  0% {
+    opacity: 0;
+    transform: scale(.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
