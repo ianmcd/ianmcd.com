@@ -16,6 +16,15 @@
   transform: scale(.5);
 }
 
+.anim__home-nav {
+  animation-delay: 2s;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-name: home-nav;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+
 // keyframes
 
 @keyframes home-body {
@@ -33,4 +42,9 @@
     opacity: 1;
     transform: scale(1);
   }
+}
+
+@keyframes home-nav {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

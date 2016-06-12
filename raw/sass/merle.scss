@@ -6,7 +6,11 @@
 @import		'core/helpers';
 @import		'core/base';
 @import		'core/content';
-@import		'core/layout';
+
+
+@import   'layout/base';
+@import   'layout/home';
+@import   'layout/resume';
 
 
 @import   'modules/animations';

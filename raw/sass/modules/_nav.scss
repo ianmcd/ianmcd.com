@@ -1,5 +1,5 @@
 .header-nav {
-  font: 500 13px/1em $font-brandon; // resetting from vertical align stuff.
+  font: 500 12px/1em $font-brandon; // resetting from vertical align stuff.
   left: 50%;
   max-width: 1520px;
   padding: 0 60px;
@@ -9,7 +9,7 @@
   width: 100%;
 
   a {
-    color: $gr-mid;
+    color: $gr-dark;
     display: inline-block;
     padding-left: 18px;
     position: relative;
@@ -29,15 +29,15 @@
   }
 
   span {
-    background: $gr-mid;
+    background: $gr-dark;
     display: block;
-    height: 3px;
+    height: 2px;
     left: 0;
     margin: 4px 0;
     position: absolute;
     top: 1px;
     transition: background .3s;
-    width: 3px;
+    width: 2px;
 
     &:nth-of-type(2) { left: 4px; }
 
@@ -45,13 +45,13 @@
 
     &:before,
     &:after {
-      background: $gr-mid;
+      background: $gr-dark;
       content: '';
-      height: 3px;
+      height: 2px;
       position: absolute;
       top: -4px;
       transition: background .3s;
-      width: 3px;
+      width: 2px;
     }
 
     &:after {
@@ -61,12 +61,12 @@
 }
 
 .inline-nav {
-  font: 500 12px/1.5em $font-brandon;
   margin-top: 40px;
-  text-transform: uppercase;
 
   ul {
     display: inline-block;
+    font: 500 12px/1.5em $font-brandon;
+    text-transform: uppercase;
   }
 
   li {

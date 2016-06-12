@@ -29,3 +29,48 @@ a {
 
   &:hover { color: $tulip; }
 }
+
+time {
+  color: $gr-mid;
+  font: 400 12px/20px $font-gibson;
+  text-transform: uppercase;
+}
+
+header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.hr {
+  margin: 50px 0 100px;
+  text-align: center;
+
+  span {
+    border: 1px solid $brandy;
+    display: inline-block;
+    height: 8px;
+    position: relative;
+    transform: rotate(45deg);
+    width: 8px;
+
+    &:before,
+    &:after {
+      border: 1px solid $brandy;
+      content: '';
+      display: block;
+      height: 8px;
+      position: relative;
+      width: 8px;
+    }
+
+    &:after {
+      left: 6px;
+      top: -16px;
+    }
+
+    &:before {
+      left: -8px;
+      top: 6px;
+    }
+  }
+}
