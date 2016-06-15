@@ -17,6 +17,20 @@ h1,
   }
 }
 
+h2,
+.heading-2 {
+  color: $gr-darkest;
+  font: 700 20px/30px $font-brandon;
+  margin: 7px 0 0;
+  text-transform: uppercase;
+
+  a {
+    color: $gr-darkest;
+
+    &:hover { color: $gr-mid; }
+  }
+}
+
 h3,
 .heading-3 {
   color: $gr-darkest;

@@ -36,6 +36,10 @@ time {
   text-transform: uppercase;
 }
 
+article time {
+  font: 500 14px/21px $font-brandon;
+}
+
 header {
   margin-top: 50px;
   text-align: center;
