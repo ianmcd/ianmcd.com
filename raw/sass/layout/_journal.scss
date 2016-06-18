@@ -1,4 +1,4 @@
-.grid__journal-wrapper--index {
+.grid__journal-wrapper {
   margin: 0 auto;
   max-width: 700px;
 
@@ -7,5 +7,10 @@
     text-align: center;
 
     &:last-child { margin-bottom: 80px; }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 27px;
   }
 }
