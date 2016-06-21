@@ -1,0 +1,30 @@
+// one-off components
+
+// back to top
+.component__to-top {
+  color: $gr-mid;
+  display: inline-block;
+  font: 500 12px $font-brandon;
+  opacity: 0;
+  padding-right: 20px;
+  position: fixed;
+  right: 0;
+  text-transform: uppercase;
+  top: 50%;
+  transform: rotate(-90deg) translate(-9px, -50%);
+  transition: opacity .3s, transform .3s;
+
+  &.js-active {
+    opacity: 1;
+    transform: rotate(-90deg) translate(9px, -50%);
+  }
+
+  &:after {
+    content: '\e900';
+    font-family: 'imcd';
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    top: 4px;
+  }
+}

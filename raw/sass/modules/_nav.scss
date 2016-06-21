@@ -9,7 +9,7 @@
   width: 100%;
 
   a {
-    color: $gr-dark;
+    color: $gr-mid;
     display: inline-block;
     padding-left: 18px;
     position: relative;
@@ -29,7 +29,7 @@
   }
 
   span {
-    background: $gr-dark;
+    background: $gr-mid;
     display: block;
     height: 2px;
     left: 0;
@@ -45,7 +45,7 @@
 
     &:before,
     &:after {
-      background: $gr-dark;
+      background: $gr-mid;
       content: '';
       height: 2px;
       position: absolute;
